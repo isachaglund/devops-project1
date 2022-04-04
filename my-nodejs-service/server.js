@@ -4,7 +4,7 @@ const express = require("express");
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.get("/submit", (req, res) => {
-  res.sendFile(path.join(__dirname, "/views/form.html"));
+  res.sendFile(path.join(__dirname, "/views/index.html"));
 });
 
 app.get("/", (req, res) => {
